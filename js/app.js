@@ -29,7 +29,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+  function multiply(a, b) /*- ex: of parameter*/ { //eslint-disable-line
+    let productOne = a * b;
+    let str2 = `The product of ${a} and ${b} is ${productOne}.`;
+    return [productOne, str2]
+  }
 }
 
 // Here is the test for multiply(); uncomment it to run it
